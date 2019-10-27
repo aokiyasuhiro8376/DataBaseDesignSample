@@ -39,10 +39,10 @@ Things you may want to cover:
 - has_many :members
 
 
-##　groupsテーブル
+## groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|group|string|null: false|
+|group_name|string|null: false|
 ### Association
 - has many :users
 - has_many :messages
