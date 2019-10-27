@@ -42,7 +42,7 @@ Things you may want to cover:
 ##　groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|groupname|string|null: false|
+|group|string|null: false|
 ### Association
 - has many :users
 - has_many :messages
