@@ -39,7 +39,6 @@ Things you may want to cover:
 - has_many :members
 
 
-
 ## groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
