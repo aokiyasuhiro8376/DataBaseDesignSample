@@ -23,49 +23,50 @@ Things you may want to cover:
 
 * ...
 
-## usersテーブル
+
+
+
+
+## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
-|name|string|null: false|
-|email|string|null: false|
-|password|string|null: false|
+|name|string|null: false|
+|email|string|null: false|
+|password|string|null: false|
 
-### Association
-- has_many :groups
-- has_many :messages
-- has_many :members
+### Association
+- has_many :groups
+- has_many :messages
+- has_many :menbers
 
-
-## groupsテーブル
+## groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|group_name|string|null: false|
+|group_name|string|null: false|
 
-### Association
-- has many :users
-- has_many :messages
-- has_many :members
+### Association
+- has_many :users
+- has_many :messages
+- has_many :menbers
 
-
-## groups_usersテーブル
+## groups_usersテーブル
 |Column|Type|Options|
 |------|----|-------|
-|user_id|integer|null: false, foreign_key: true|
-|group_id|integer|null: false, foreign_key: true|
+|user_id|integer|null: false, foreign_key: true|
+|group_id|integer|null: false, foreign_key: true|
 
-### Association
-- belongs_to :group
-- belongs_to :user
+### Association
+- belongs_to :group
+- belongs_to :user
 
-
-## messagesテーブル
+## messagesテーブル
 |Column|Type|Options|
 |------|----|-------|
-|body|text|null: false|
-|image|string|null: false|
-|group|references|null: false, foreign_key: true|
-|user|references|null: false, foreign_key: true|
+|body|text|null: false|
+|image|string|null: false|
+|group|references|null: false|, foreign_key: true|
+|user|references|null: false|, foreign_key: true|
 
-### Association
-- belongs_to :user
-- belongs_to :group
+### Association
+- belongs_to :group
+- belongs_to :user
