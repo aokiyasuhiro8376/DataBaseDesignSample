@@ -23,16 +23,13 @@ Things you may want to cover:
 
 * ...
 
-
-
-
-
 ## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false|
 |email|string|null: false|
 |password|string|null: false|
+
 ### Association
 - has_many :groups
 - has_many :messages
@@ -43,6 +40,7 @@ Things you may want to cover:
 |Column|Type|Options|
 |------|----|-------|
 |group_name|string|null: false|
+
 ### Association
 - has many :users
 - has_many :messages
@@ -54,6 +52,7 @@ Things you may want to cover:
 |------|----|-------|
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
+
 ### Association
 - belongs_to :group
 - belongs_to :user
@@ -66,6 +65,7 @@ Things you may want to cover:
 |image|string|null: false|
 |group|references|null: false, foreign_key: true|
 |user|references|null: false, foreign_key: true|
+
 ### Association
 - belongs_to :user
 - belongs_to :group
